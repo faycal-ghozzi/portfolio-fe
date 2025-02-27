@@ -15,4 +15,13 @@ export default function Carousel() {
         { id: 6, content: t.contact },
     ];
 
+    const [pageIndex, setPageIndex] = useState(0);
+
+    const handleNext = () => {
+        setPageIndex((prev) => (prev + 1) % pages.length);
+    };
+
+    const handlePrev = () => {
+        setPageIndex((prev) => (prev - 1 + pages.length) % pages.length);
+    };
 }
