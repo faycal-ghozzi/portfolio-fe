@@ -24,4 +24,34 @@ export default function Carousel() {
     const handlePrev = () => {
         setPageIndex((prev) => (prev - 1 + pages.length) % pages.length);
     };
+
+    return (
+        <div>
+          <div/>
+    
+          <div>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={pageIndex}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5 }}
+                className="page"
+              >
+                <h2>{pages[pageIndex].content}</h2>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+    
+          <div>
+            <button onClick={handlePrev}>
+              Left
+            </button>
+            <button onClick={handleNext}>
+              Right
+            </button>
+          </div>
+        </div>
+      );
 }
