@@ -1,0 +1,18 @@
+{
+    "welcome": "Welcome",
+    "experience": "Experience",
+    "projects": "Projects",
+    "accomplishments": "Accomplishments",
+    "contact": "Contact Me",
+    "introduction": "Hi, I am Faycal!",
+    "whatDo": "And I Do",
+    "typeWords": [
+        "Software Engineering",
+        "PHP",
+        "Javascript",
+        "Sql",
+        "NoSql",
+        "Amazing things"
+    ]
+  }
+  
